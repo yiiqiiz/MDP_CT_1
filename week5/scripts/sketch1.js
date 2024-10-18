@@ -6,7 +6,7 @@ let timerID
 let bkgndCLr
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   colorMode(HSB, TWO_PI, 1, 1);
 
   radius = width * 0.1;
@@ -39,4 +39,8 @@ function draw() {
     );
     pop()
   }
+}
+
+function windowResized(){
+    resizeCanvas(windowWidth,windowHeight);
 }
