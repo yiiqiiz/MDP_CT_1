@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handpose</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .screenshot {
+            margin: 20px 0;
+        }
+
+        .description {
+            max-width: 600px;
+            margin: 10px auto;
+            text-align: left;
+        }
+
+        canvas {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ml5.js_handpose</h1>
+    <p>This project is an interactive hand-tracking experience that generates colorful falling balls on the screen,
+        responding dynamically to the position of the user's index fingertip detected by a webcam.</p>
+
+    <!-- 引入 p5.js 和 sketch.js -->
+    <script src="https://editor.p5js.org/yiiqiiz/sketches/6iW40OlZ6"></script>
+    <script src="sketch.js"></script>
+
+    <!-- Coding Process Screenshots and Descriptions -->
+    <div class="screenshot">
+        <img src="screenshot1.png" alt="Setting up the canvas and initial target position" width="500">
+        <div class="description">1. Create Project Files: Create the project folder and files (e.g., index.html,
+            sketch.js).
+            Include the ml5.js library in the index.html file.
+            Set up the canvas and capture the webcam video in the setup() function.</div>
+    </div>
+
+    <div class="screenshot">
+        <img src="screenshot2.png" alt="Drawing the target and updating the timer" width="500">
+        Set up the canvas and capture the webcam video in the setup() function.
+    </div>
+    <div class="description">2. Load the Hand Pose Model: Use ml5.handPose() in the preload() or setup() function to
+        load the hand pose model.
+        Start detecting hands with handPose.detectStart(video, gotHands) and define the gotHands() callback function to
+        store results.</div>
+    </div>
+
+    <div class="screenshot">
+        <img src="screenshot3.png" alt="Increasing the difficulty level" width="500">
+        <div class="description">3. Draw Balls: In the draw() function, create logic to generate colorful balls at the
+            index fingertip when detected.
+            Set properties for the balls such as position, color, size, and movement.</div>
+    </div>
+
+    <div class="screenshot"></div>
+    <img src="screenshot3.png" alt="Increasing the difficulty level" width="500">
+    <div class="description">4. Draw Webcam Image: Mirror and display the webcam image using translate() and scale() for
+        a flipped view.
+        Overlay the hand tracking and ball drawing on top of the mirrored video.
+    </div>
+    </div>
+
+
+</body>
+
+</html>

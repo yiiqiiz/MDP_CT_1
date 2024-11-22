@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background-color: beige;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* NAVIGATION BAR */
+header nav {
+    background-color: rgb(229, 194, 70);
