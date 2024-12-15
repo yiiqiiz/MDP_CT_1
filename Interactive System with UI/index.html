@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rapid Tap Timer Game</title>
+    <title>Interactive System with UI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,8 +17,18 @@
 
         .description {
             max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        p {
+            max-width: 600px;
             margin: 10px auto;
             text-align: left;
+        }
+
+        p+p {
+            margin-top: 20px;
         }
 
         canvas {
@@ -28,34 +38,56 @@
     </style>
 </head>
 
-<body>
+</body>
 
-    <h1>Rapid Tap Timer Game</h1>
-    <p>In this project, I built a reaction-based game using p5.js. The following screenshots and descriptions outline
-        the coding process and main concepts implemented in this game.</p>
+<h1>Rapid Tap Timer Game</h1>
+<h2>UML diagram and Prototype</h2>
 
-    <!-- 引入 p5.js 和 sketch.js -->
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js"></script>
-    <script src="sketch.js"></script>
 
-    <!-- Coding Process Screenshots and Descriptions -->
-    <div class="screenshot">
-        <img src="screenshot1.png" alt="Setting up the canvas and initial target position" width="500">
-        <div class="description">1. Initializing the canvas and setting up the countdown timer and score system to track
-            the player's progress throughout the game.</div>
-    </div>
+<p>
+    In this project, I built a reaction-based game using p5.js. The following screenshots and descriptions outline the
+    coding process and main concepts implemented in this game.
+</p>
+<br><br>
+<video src="./quicktap.mp4" controls width="600"></video>
+<br><br>
+<div id="link-container"></div>
+<a href="https://editor.p5js.org/yiiqiiz/sketches/iFgkGMRy9"
+    style="color: black;">https://editor.p5js.org/yiiqiiz/sketches/iFgkGMRy9</a>
+</div>
 
-    <div class="screenshot">
-        <img src="screenshot2.png" alt="Drawing the target and updating the timer" width="500">
-        <div class="description">2. Drawing the target by generating a randomly colored ball that appears on the canvas;
-            the ball disappears after a set time, and players must click it to score points.</div>
-    </div>
+<div id="sketch-holder"></div>
 
-    <div class="screenshot">
-        <img src="screenshot3.png" alt="Increasing the difficulty level" width="500">
-        <div class="description">3. Game over screen and final score. Once the time is up, the game stops, displaying
-            “Game Over” and the final score in the center of the canvas.</div>
-    </div>
+
+
+<br><br>
+<h2>UML Diagram</h2>
+<img src="./uml.jpg" alt="Interactive System with UI" width="600">
+<br><br>
+
+
+<br><br>
+<h2>Design Process</h2>
+<h3>Step 1</h3>
+<img src="./1.png" alt="Interactive System with UI" width="600">
+<p>Initializing the canvas and setting up the countdown timer and score system to track the player's progress throughout
+    the game.</p>
+<br><br>
+
+<br><br>
+<h3>Step 2</h3>
+<img src="./2.png" alt="Interactive System with UI" width="600">
+<p>Drawing the target by generating a randomly colored ball that appears on the canvas, the ball disappears after a set
+    time, and players must click it to score points.</p>
+<br><br>
+
+<br><br>
+<h3>Step 3</h3>
+<img src="./3.png" alt="Interactive System with UI" width="600">
+<p>Game over screen and final score. Once the time is up, the game stops, displaying “Game Over” and the final score in
+    the center of the canvas.</p>
+<br><br>
+<br><br>
 
 
 </body>
