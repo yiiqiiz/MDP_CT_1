@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-linear Movement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .screenshot {
+            margin: 20px 0;
+        }
+
+        .description {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 10px auto;
+            text-align: left;
+        }
+
+        p+p {
+            margin-top: 20px;
+        }
+
+        canvas {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Non-linear Movement</h1>
+    <h2>Symmetry and Sound-Driven Dynamic Animation</h2>
+
+
+    <p>
+        This project creates an abstract, dynamic animation that visually reacts to sound in real time. It combines
+        rotational symmetry, random colors and non-linear movement which are all influenced by the amplitude of
+        an audio file.
+    </p>
+    <br><br>
+    <video src="./mognolia.mp4" controls width="600"></video>
+
+    <br><br>
+    <h2>Key Features</h2>
+    <p>
+        1. <b>Sound Integration:</b> The animation uses a loaded audio file, with its amplitude driving the stroke
+        weight, symmetry, and color intensity.<br><br> 2. <b>Non-Linear Movement: </b> Smooth and organic line movements
+        are generated using noise() for randomness, avoiding rigid or repetitive motion patterns.<br><br> 3. <b>Dynamic
+            Symmetry: </b> The number of symmetrical divisions adapts to the audio's volume, creating a constantly
+        changing visual pattern. <br><br> 4. <b> Vibrant Colors: </b> Randomized colors shift based on the sound level,
+        with occasional pops of dramatic hues adding unpredictability. <br><br> 5. <b> Layered Effects: </b>
+        Transparency and blending ensure a rich, evolving visual experience. </p>
+    <br><br>
+
+    <img src="./mognolia.jpg" alt="non-linear movement" width="600">
+
+    <h2>Problem Encountered</h2>
+    <p><b>Using the real-time amplitude of the audio control the visual parameters of the scene, including line
+            thickness ,
+            dynamic symmetry and dynamic angle.
+        </b>
+    </p>
+    <br><br>
+    <img src="./code.jpg" alt="non-linear movement" width="600">
+    <br><br>
+    <p>
+        The rotation angle is determined by <b>dynamicSymmetry</b>, which dynamically changes based on the amplitude
+        value level. The angle for each symmetrical section is calculated using 360 / dynamicSymmetry, allowing for
+        dynamic adjustments: <br><br>When the amplitude is <b>higher</b>, dynamicSymmetry <b>increases</b>, and the rotation angle
+        decreases, creating denser patterns. <br><br>When the amplitude is <b>lower</b>, dynamicSymmetry <b>decreases</b>, and the
+        rotation angle increases, resulting in sparser patterns.
+    </p>
+    <br><br>
+    <br><br>
+
+</body>
+
+</html>
