@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find my Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .screenshot {
+            margin: 20px 0;
+        }
+
+        .description {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 10px auto;
+            text-align: left;
+        }
+
+        p+p {
+            margin-top: 20px;
+        }
+
+        canvas {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Find my Interface</h1>
+    <h2>Bridge of Hands</h2>
+
+
+    <p>
+        Bridge of Hands is an interactive art project that combines hand gesture recognition and physics simulation.
+        Using a webcam, the program captures hand movements to create dynamic colored balls and a virtual bridge. When
+        the right hand is detected, colorful balls drop from the tip of the index finger, reflecting playful and
+        creative interactions. The left hand controls the endpoints of a bridge, allowing users to dynamically shape and
+        manipulate its structure through gestures.
+    </p>
+    <br><br>
+    <video src="./bridgeofhands.mp4" controls width="600"></video>
+    <br><br>
+    <div id="link-container"></div>
+    <a href="https://editor.p5js.org/yiiqiiz/sketches/Zbr5Ry6xY"
+        style="color: black;">https://editor.p5js.org/yiiqiiz/sketches/Zbr5Ry6xY</a>
+    </div>
+
+    <div id="sketch-holder"></div>
+
+
+
+    <br><br>
+    <h2>Design Process</h2>
+    <img src="./left.jpg" alt="findmyinterface" width="600">
+    <br><br>
+    <img src="./right.jpg" alt="findmyinterface" width="600">
+    <br><br>
+
+    <br><br>
+    <h3>Step 1: Initialize Libraries and Setup</h3>
+    <p>Loaded ml5.js for hand recognition and Matter.js for physics. Created a canvas and video feed, mirroring the
+        video for intuitive interaction.</p>
+    <br><br>
+
+    <br><br>
+    <h3>Step 2: Hand Gesture Detection</h3>
+    <p>Used ml5.js handPose to track hand positions in real time. Stored keypoints (like fingertips) for both hands to
+        enable interaction.</p>
+    <br><br>
+
+    <br><br>
+    <h3>Step 3: Generate Balls with Right Hand</h3>
+    <p>Detected the right-hand index fingertip to drop colorful, bouncing balls every 30 frames.
+        Added physics properties (bounce, friction) for realistic behavior.
+    </p>
+    <br><br>
+
+    <br><br>
+    <h3>Step 4: Manipulate Bridge with Left Hand</h3>
+    <p>Used the left hand to control the endpoints of a virtual bridge by tracking two fingertips. Updated the bridge's
+        position dynamically based on hand movements.
+    </p>
+    <br><br>
+
+    <br><br>
+    <h3>Step 5: Render and Update</h3>
+    <p>Displayed balls and the bridge on the canvas. Removed balls when they left the screen and updated the bridge with
+        each frame for smooth interaction.
+    </p>
+    <br><br>
+    <br><br>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
