@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Surveillance</title>
+    <style>
+        /* 一行，加上平滑滚动效果 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* 整个页面是左右结构 */
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* 左边目录栏 */
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            border-right: 2px solid black;
+            padding: 40px 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #333;
+            text-align: left;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 16px;
+            transition: 0.3s;
+            text-align: left;
+        }
+
+        /* 小黑方块 */
+        .sidebar a::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            margin-right: 10px;
+        }
+
+        .sidebar a:hover {
+            color: #00bcd4;
+        }
+
+        /* 右边内容区 */
+        .content {
+            flex: 1;
+            padding: 40px;
+            background: white;
+            overflow-y: auto;
+        }
+
+        .content h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+        .content h3 {
+            margin-top: 40px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 0; /* 图片无圆角 */
+        }
+
+        /* 顶部大横幅 */
+        .banner {
+            width: 100%;
+            height: auto; /* 高度自适应 */
+            margin-bottom: 40px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+        <!-- 左边目录栏 -->
+        <div class="sidebar">
+            <h2>Emotional Surveillance</h2>
+            <a href="#introduction">Introduction</a>
+            <a href="#reference">Reference</a>
+            <a href="#matrix">2D Matrix</a>
+            <a href="#sketch">Sketch</a>
+            <a href="#process">Process</a>
+        </div>
+
+        <!-- 右边内容区 -->
+        <div class="content">
+            <!-- 顶部大横幅 -->
+            <div class="banner">
+                <img src="office2.jpg" alt="Banner">
+                <img src="office1.jpg" alt="Banner">
+            
+            </div>
+
+            <h2 id="introduction">Introduction</h2>
+            <p><b>Emotional Survillance</b></p>
+            <p>In a hyper-digitalized future, the Emotional Feedback Loop System (EFLS) is a speculative technology that
+                monitors and regulates employees' emotions in real-time to sustain workplace productivity and social
+                stability. When emotional instability threatens efficiency, the system rewinds the day to its
+                start—while preserving memory—allowing employees to consciously adjust their responses and align with
+                workplace expectations.</p>
+            <p>This system is designed to control and optimize emotions, reducing societal conflicts and
+                enhancing workplace efficiency.</p></p>
+
+            
+            <h2 id="reference">Reference</h2>
+            <p><b>1. Microsoft Viva</b></p>
+            <p>A Microsoft-developed employee experience platform uses data to analyze employees' work habits and
+                emotional states, helping businesses improve employee experience and efficiency. Through its emotion
+                analysis feature, it can assess employees' stress levels and work-related emotions, providing managers
+                with suggestions to help with emotional management and work adjustments.</p>
+
+            <p><b>2. Affectiva</b></p>
+            <p>A company specializing in Emotion AI focuses on recognizing consumer emotional reactions through facial
+                expressions and vocal tones. This company utilizes AI technology to analyze users' facial expressions
+                while they watch advertisements or product demonstrations, evaluating their emotional responses to the
+                ads.</p>
+
+            <h2 id="matrix">2D Matrix</h2>
+            <img src="2D matrix.png" alt="2D Matrix">
+
+            <h2 id="sketch">Sketch</h2>
+            <img src="sketch.jpg" alt="Sketch">
+            <img src="concept1.png" alt="Sketch">
+            
+
+            <h2 id="process">Process</h2>
+            <img src="process1.png" alt="Process 1">
+            <img src="process2.png" alt="Process 2">
+            <img src="process3.png" alt="Process 3">
+        </div>
+    </div>
+
+</body>
+
+</html>

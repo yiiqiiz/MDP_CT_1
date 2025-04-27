@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Surveillance</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* 让页面内容从顶部开始对齐 */
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* 主容器 */
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start; /* 让左右内容顶部对齐 */
+            width: 80%;
+            max-width: 1200px;
+            background: white;
+            padding: 40px 20px 20px 20px; /* 确保顶部没有 padding */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            height: 90vh; /* 限制高度 */
+            overflow: hidden; /* 避免整体滚动 */
+        }
+
+        /* 左侧内容（图片） */
+        .left-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* 确保左侧图片和右侧标题顶部对齐 */
+            align-items: center;
+            position: sticky; /* 让图片固定 */
+            top: 0;
+            height: 100%;
+            background: white;
+        }
+
+        .left-content img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin-top: 0; /* 避免图片向上偏移 */
+        }
+
+        /* 右侧内容（文本 + 图片） */
+        .right-content {
+            flex: 1;
+            padding: 0 20px 20px 20px; /* 确保顶部没有 padding */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
+            overflow-y: auto; /* 让右侧可以滚动 */
+        }
+
+        .right-content h2 {
+            margin-top: 0; /* 让标题紧贴顶部 */
+            padding-top: 0;
+            color: #333;
+        }
+
+        .right-content h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .right-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* 右侧图片样式 */
+        .right-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- 左侧固定图片 -->
+        <div class="left-content">
+            <img src="Render.jpg" alt="1">
+        </div>
+
+        <!-- 右侧可滚动文本 -->
+        <div class="right-content">
+            <h2>EMOTIONAL SURVILLANCE</h2>
+            <p>In a hyper-digitalized future, the Emotional Feedback Loop System (EFLS) is a speculative technology that
+                monitors and regulates employees' emotions in real-time to sustain workplace productivity and social
+                stability. When emotional instability threatens efficiency, the system rewinds the day to its
+                start—while preserving memory—allowing employees to consciously adjust their responses and align with
+                workplace expectations.</p>
+            <p>This system is designed to control and optimize emotions, reducing societal conflicts and
+                enhancing workplace efficiency.</p>
+            <h3>Reference</h3>
+            <p><b>1. Microsoft Viva</b></p>
+            <p>A Microsoft-developed employee experience platform uses data to analyze employees' work habits and
+                emotional states, helping businesses improve employee experience and efficiency. Through its emotion
+                analysis feature, it can assess employees' stress levels and work-related emotions, providing managers
+                with suggestions to help with emotional management and work adjustments.</p>
+            <p><b>2. Affectiva</b></p>
+            <p>A company specializing in Emotion AI focuses on recognizing consumer emotional reactions through facial
+                expressions and vocal tones. This company utilizes AI technology to analyze users' facial expressions
+                while they watch advertisements or product demonstrations, evaluating their emotional responses to the
+                ads.</p>
+            <h3>2D Matrix</h3>
+            <img src="2D matrix.png" alt="2D Matrix">
+            <h3>Sketch</h3>
+            <img src="concept1.png" alt="2D Matrix">
+            <h3>Process</h3>
+            <img src="process1.png" alt="2D Matrix">
+            <img src="process2.png" alt="2D Matrix">
+            <img src="process3.png" alt="2D Matrix">
+        </div>
+    </div>
+
+</body>
+
+</html>
