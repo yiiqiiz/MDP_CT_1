@@ -20,10 +20,12 @@
             background-color: #f4f4f4;
         }
 
+
         .layout {
             display: flex;
             min-height: 100vh;
         }
+
 
         .sidebar {
             width: 250px;
@@ -53,6 +55,7 @@
             text-align: left;
         }
 
+
         .sidebar a::before {
             content: "";
             display: inline-block;
@@ -65,6 +68,7 @@
         .sidebar a:hover {
             color: #00bcd4;
         }
+
 
         .content {
             flex: 1;
@@ -99,6 +103,7 @@
             border-radius: 0;
         }
 
+
         .banner {
             width: 100%;
             height: auto;
@@ -116,61 +121,86 @@
 <body>
 
     <div class="layout">
-        
+
         <div class="sidebar">
-            <h2>Liminal Space</h2>
+            <h2>Sandwich Builder</h2>
             <a href="#introduction">Introduction</a>
-            <a href="#dream">Dream Space</a>
-            <a href="#sketch">Sketching</a>
-            <a href="#interactive">Interactive</a>
-            <a href="#sketch-image">Sketch Images</a>
-            <a href="#process">Process</a>
+            <a href="#sketch">Sketch</a>
+            <a href="#blender">Blender</a>
+            <a href="#unity">Unity</a>
+            <a href="#arduino">Arduino</a>
+            <a href="#outcome">Outcome</a>
         </div>
 
-        
+
         <div class="content">
-            
+
             <div class="banner">
-                <img src="sandwichbuilder.jpg" alt="Banner">
+                <img src="game.jpg" alt="Banner">
             </div>
 
             <h2 id="introduction">Introduction</h2>
-            <p><b>Liminal Space</b> refers to the strange, transitional realm between two states—whether physical, emotional,
-                or existential. These spaces, like empty hallways, abandoned malls, or foggy highways at dawn, feel both
-                familiar and unsettling, evoking nostalgia, disorientation, or unease. Beyond physical places,
-                liminality also describes life’s in-between moments, such as adolescence, career shifts, or cultural
-                transitions, where one is neither who they were nor who they will become. In art, media, and internet
-                culture, liminal spaces are often depicted as dreamlike voids, resonating with our collective sense of
-                uncertainty and transformation.</p>
+            <p><b>Sandwich Builder</b> is an interactive mini-game developed with Unity and Arduino. Inspired by the
+                classic game Tower Builder, players must carefully time their actions to drop sandwich ingredients and
+                stack them into a towering sandwich. Using an Arduino button, the game enables real-world physical
+                interaction, enhancing the immersive experience.
 
-            <h2 id="dream">Dream Space: Memories of the Laboratory</h2>
-            <p>For this project, I will be creating a liminal dream space inspired by a childhood memory—an old
-                university laboratory building I used to visit frequently. While this space is not a site of fear or
-                trauma, it appears in my dreams as an uncanny, endless structure where I can never find the exit. The
-                dream’s atmosphere is defined by dim, green-tinted lighting, long corridors that seem to stretch
-                indefinitely, and staircases at the end of each hallway leading both up and down, creating a looping,
-                recursive environment.</p>
+            </p>
 
-            <h2 id="sketch">Sketching the Environment</h2>
-            <p>The space consists of narrow, repetitive hallways lined with tightly packed rooms, each labeled as
-                laboratories. Some rooms contain specimens and scientific artifacts, reinforcing the feeling of an
-                academic yet slightly surreal environment. The combination of repeating objects, cyclical architecture,
-                and non-linear navigation generates an immersive liminal space, emphasizing disorientation and
-                transition rather than resolution.</p>
+            <h2 id="sketch">Sketch</h2>
+            <p>This project aims to create a 3D interactive experience with a fixed camera perspective. I will first use
+                Blender to model both static and interactive objects in the scene. Then, I will import the models into
+                Unity to build and organize the environment. In Unity, I will add scripts to the interactive objects,
+                enabling them to respond to physics effects such as falling and collisions. Finally, the project will be
+                extended with Arduino, allowing physical buttons and other inputs to control the dropping of objects,
+                enhancing real-time interaction between the player and the scene.</p>
+            <p><img src="sketch.jpg" alt="Sketch"></p>
+            <br><br>
 
-            <h2 id="interactive">Interactive Possibilities</h2>
-            <p><b>Nonlinear Exploration:</b> The experience is not goal-oriented; instead, players will wander freely,
-                retracing their steps only to find that spaces have subtly shifted.</p>
 
-            <h2 id="sketch-image">Sketch Images</h2>
-            <img src="sketch1.png" alt="Sketch 1">
-            <img src="sketch2.png" alt="Sketch 2">
+            <h2 id="blender">Blender</h2>
+            <br><br>
+            <img src="blender1.jpg" alt="Blender 1">
+            <img src="blender2.jpg" alt="Blender 2">
+            <img src="blender3.jpg" alt="Blender 3">
+            <br><br>
+            <br><br>
 
-            <h2 id="process">Process</h2>
-            <img src="Process1.png" alt="Process 1">
-            <img src="Process2.png" alt="Process 2">
-            <img src="Process3.png" alt="Process 3">
-            <img src="unity1.png" alt="Unity 1">
+
+            <h2 id="unity">Unity</h2>
+            <br><br>
+
+            <h3>Step 1</h3>
+            <p>First, add movement to the hook by attaching a HookMovement script.</p>
+            <img src="unity1.1.jpg" alt="Unity 1">
+            <img src="unity1.2.jpg" alt="Unity 1">
+            <br><br>
+
+            <h3>Step 2</h3>
+            <p>Add the ObjectDropper script, set Box Colliders on the hook and objects, and create object prefabs to
+                randomly spawn different sandwich ingredients.</p>
+            <img src="unity2.1.jpg" alt="Unity 1">
+            <img src="unity2.2.jpg" alt="Unity 1">
+            <br><br>
+
+            <br><br>
+
+
+            <h2 id="arduino">Arduino</h2>
+            <br><br>
+            <img src="arduino1.jpg" alt=Arduino 1">
+            <img src="arduino3.png" alt=Arduino 1">
+            <video src="arduino.mp4" controls width="1060"></video>
+            <br><br>
+            <br><br>
+
+            <h2 id="outcome">Outcome</h2>
+            <br><br>
+            <video src="outcome.mp4" controls width="1060"></video>
+
+            <p>I am having trouble connecting Unity and Arduino. I am not sure whether I should use SerialPort, Ardity,
+                or another method to connect Arduino to objects in Unity.</p>
+
 
         </div>
     </div>
