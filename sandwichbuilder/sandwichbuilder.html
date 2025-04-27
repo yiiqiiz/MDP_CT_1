@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwich Builder</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            border-right: 2px solid black;
+            padding: 40px 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #333;
+            text-align: left;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 16px;
+            transition: 0.3s;
+            text-align: left;
+        }
+
+        .sidebar a::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            margin-right: 10px;
+        }
+
+        .sidebar a:hover {
+            color: #00bcd4;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+            background: white;
+            overflow-y: auto;
+        }
+
+        .content h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+        .content h3 {
+            margin-top: 40px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 0;
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+        <!-- 左边目录栏 -->
+        <div class="sidebar">
+            <h2>Liminal Space</h2>
+            <a href="#introduction">Introduction</a>
+            <a href="#dream">Dream Space</a>
+            <a href="#sketch">Sketching</a>
+            <a href="#interactive">Interactive</a>
+            <a href="#sketch-image">Sketch Images</a>
+            <a href="#process">Process</a>
+        </div>
+
+        <!-- 右边内容区 -->
+        <div class="content">
+            <!-- 顶部大横幅 -->
+            <div class="banner">
+                <img src="refine.png" alt="Banner">
+            </div>
+
+            <h2 id="introduction">Introduction</h2>
+            <p><b>Liminal Space</b> refers to the strange, transitional realm between two states—whether physical, emotional,
+                or existential. These spaces, like empty hallways, abandoned malls, or foggy highways at dawn, feel both
+                familiar and unsettling, evoking nostalgia, disorientation, or unease. Beyond physical places,
+                liminality also describes life’s in-between moments, such as adolescence, career shifts, or cultural
+                transitions, where one is neither who they were nor who they will become. In art, media, and internet
+                culture, liminal spaces are often depicted as dreamlike voids, resonating with our collective sense of
+                uncertainty and transformation.</p>
+
+            <h2 id="dream">Dream Space: Memories of the Laboratory</h2>
+            <p>For this project, I will be creating a liminal dream space inspired by a childhood memory—an old
+                university laboratory building I used to visit frequently. While this space is not a site of fear or
+                trauma, it appears in my dreams as an uncanny, endless structure where I can never find the exit. The
+                dream’s atmosphere is defined by dim, green-tinted lighting, long corridors that seem to stretch
+                indefinitely, and staircases at the end of each hallway leading both up and down, creating a looping,
+                recursive environment.</p>
+
+            <h2 id="sketch">Sketching the Environment</h2>
+            <p>The space consists of narrow, repetitive hallways lined with tightly packed rooms, each labeled as
+                laboratories. Some rooms contain specimens and scientific artifacts, reinforcing the feeling of an
+                academic yet slightly surreal environment. The combination of repeating objects, cyclical architecture,
+                and non-linear navigation generates an immersive liminal space, emphasizing disorientation and
+                transition rather than resolution.</p>
+
+            <h2 id="interactive">Interactive Possibilities</h2>
+            <p><b>Nonlinear Exploration:</b> The experience is not goal-oriented; instead, players will wander freely,
+                retracing their steps only to find that spaces have subtly shifted.</p>
+
+            <h2 id="sketch-image">Sketch Images</h2>
+            <img src="sketch1.png" alt="Sketch 1">
+            <img src="sketch2.png" alt="Sketch 2">
+
+            <h2 id="process">Process</h2>
+            <img src="Process1.png" alt="Process 1">
+            <img src="Process2.png" alt="Process 2">
+            <img src="Process3.png" alt="Process 3">
+            <img src="unity1.png" alt="Unity 1">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
